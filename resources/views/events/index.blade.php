@@ -1,5 +1,16 @@
 @extends('layouts.front2')
 
+@section('styles')
+    <style>
+        .card-title.event {
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 100%;
+            padding-top: 5px !important;
+            padding-bottom: 5px !important;
+        }
+    </style>
+@stop
+
 @section('content')
     <div class="">
         <div class="row">
@@ -58,92 +69,120 @@
 
             <div class="col s8">
                 <div class="col s12">
-                    <div class="card">
+                    <div class="card medium">
+                        <div class="card-image">
+                            <img src="/img/img2.jpg">
+                            <span class="card-title event">Race</span>
+                        </div>
+
                         <div class="card-content">
-                            <span class="card-title grey-text text-darken-4">Card Title</span>
                             <p>I am a very simple card. I am good at containing small bits of information.
                                 I am convenient because I require little markup to use effectively.</p>
                         </div>
                         <div class="card-action">
-                            <a href="#">This is a link</a>
+                            <a href="#">View Event</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col s12">
-                    <div class="card">
+                    <div class="card medium">
+                        <div class="card-image">
+                            <img src="/img/img1.jpg">
+                            <span class="card-title event">Race</span>
+                        </div>
+
                         <div class="card-content">
-                            <span class="card-title grey-text text-darken-4">Card Title</span>
                             <p>I am a very simple card. I am good at containing small bits of information.
                                 I am convenient because I require little markup to use effectively.</p>
                         </div>
                         <div class="card-action">
-                            <a href="#">This is a link</a>
+                            <a href="#">View Event</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col s12">
-                    <div class="card">
+                    <div class="card medium">
+                        <div class="card-image">
+                            <img src="/img/1.jpg">
+                            <span class="card-title event">Race</span>
+                        </div>
+
                         <div class="card-content">
-                            <span class="card-title grey-text text-darken-4">Card Title</span>
                             <p>I am a very simple card. I am good at containing small bits of information.
                                 I am convenient because I require little markup to use effectively.</p>
                         </div>
                         <div class="card-action">
-                            <a href="#">This is a link</a>
+                            <a href="#">View Event</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col s12">
-                    <div class="card">
+                    <div class="card medium">
+                        <div class="card-image">
+                            <img src="/img/3.jpg">
+                            <span class="card-title event">Race</span>
+                        </div>
+
                         <div class="card-content">
-                            <span class="card-title grey-text text-darken-4">Card Title</span>
                             <p>I am a very simple card. I am good at containing small bits of information.
                                 I am convenient because I require little markup to use effectively.</p>
                         </div>
                         <div class="card-action">
-                            <a href="#">This is a link</a>
+                            <a href="#">View Event</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col s12">
-                    <div class="card">
+                    <div class="card medium">
+                        <div class="card-image">
+                            <img src="/img/4.jpg">
+                            <span class="card-title event">Race</span>
+                        </div>
+
                         <div class="card-content">
-                            <span class="card-title grey-text text-darken-4">Card Title</span>
                             <p>I am a very simple card. I am good at containing small bits of information.
                                 I am convenient because I require little markup to use effectively.</p>
                         </div>
                         <div class="card-action">
-                            <a href="#">This is a link</a>
+                            <a href="#">View Event</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col s12">
-                    <div class="card">
+                    <div class="card medium">
+                        <div class="card-image">
+                            <img src="/img/5.jpg">
+                            <span class="card-title event">Race</span>
+                        </div>
+
                         <div class="card-content">
-                            <span class="card-title grey-text text-darken-4">Card Title</span>
                             <p>I am a very simple card. I am good at containing small bits of information.
                                 I am convenient because I require little markup to use effectively.</p>
                         </div>
                         <div class="card-action">
-                            <a href="#">This is a link</a>
+                            <a href="#">View Event</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col s12">
-                    <div class="card">
+                    <div class="card medium">
+                        <div class="card-image">
+                            <img src="/img/6.jpg">
+                            <span class="card-title event">Race</span>
+                        </div>
+
                         <div class="card-content">
-                            <span class="card-title grey-text text-darken-4">Card Title</span>
                             <p>I am a very simple card. I am good at containing small bits of information.
                                 I am convenient because I require little markup to use effectively.</p>
                         </div>
                         <div class="card-action">
-                            <a href="#">This is a link</a>
+                            <a href="#">View Event</a>
                         </div>
                     </div>
                 </div>
