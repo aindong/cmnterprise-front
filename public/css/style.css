@@ -1,0 +1,64 @@
+.navigation-area { padding-top: 10px !important; }
+
+.contact-icos{
+	padding:0;
+	margin:0;
+}
+.contact-icos p{
+	margin-top:10px;
+}
+.contact-icos div{
+	padding:20px 0 0;
+	margin:0;
+	list-style:none;
+}
+.contact-icos div{
+	padding:10px 8px;
+	margin:0;
+	display:inline-table;
+}
+.contact-icos div a{
+	padding:24px 0 0;
+	margin-left:38%;
+	margin-bottom: 20px;
+	display:block;
+	width:90px;
+	height:90px;
+	background:rgba(251,251,251,.2);
+	color:#fff;
+	font-size:42px;
+	text-align:center;
+	text-decoration:none;
+	border-radius:50%;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+}
+.contact-icos div a:hover{
+	background:#fff;
+	color:#ff4500;
+	text-decoration:none;
+}
+.banner1{
+	background:url(../img/1.jpg) center center no-repeat;
+	-webkit-background-size:cover!important;
+	-moz-background-size:cover!important;
+	-ms-background-size:cover!important;
+	background-size:cover!important;
+}
+.banner2{
+	background:url(../img/2.jpg) center center no-repeat;
+	-webkit-background-size:cover!important;
+	-moz-background-size:cover!important;
+	-ms-background-size:cover!important;
+	background-size:cover!important;
+}
+.banner3{
+	background:url(../img/banner2.jpg) center center no-repeat;
+	-webkit-background-size:cover!important;
+	-moz-background-size:cover!important;
+	-ms-background-size:cover!important;
+	background-size:cover!important;
+}
+.social-icos .animated {
+	padding-right: 25px !important;
+}
