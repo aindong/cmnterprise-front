@@ -12,3 +12,6 @@
 */
 
 $app->get('/', 'Home\HomeController@index');
+
+// Events
+$app->get('/events', 'Events\EventsController@index');
