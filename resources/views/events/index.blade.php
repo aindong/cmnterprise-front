@@ -57,7 +57,7 @@
             </div>
 
             <div class="col s8">
-                <div class="col s4">
+                <div class="col s12">
                     <div class="card">
                         <div class="card-content">
                             <span class="card-title grey-text text-darken-4">Card Title</span>
@@ -70,7 +70,7 @@
                     </div>
                 </div>
 
-                <div class="col s4">
+                <div class="col s12">
                     <div class="card">
                         <div class="card-content">
                             <span class="card-title grey-text text-darken-4">Card Title</span>
@@ -83,7 +83,7 @@
                     </div>
                 </div>
 
-                <div class="col s4">
+                <div class="col s12">
                     <div class="card">
                         <div class="card-content">
                             <span class="card-title grey-text text-darken-4">Card Title</span>
@@ -96,7 +96,7 @@
                     </div>
                 </div>
 
-                <div class="col s4">
+                <div class="col s12">
                     <div class="card">
                         <div class="card-content">
                             <span class="card-title grey-text text-darken-4">Card Title</span>
@@ -109,7 +109,7 @@
                     </div>
                 </div>
 
-                <div class="col s4">
+                <div class="col s12">
                     <div class="card">
                         <div class="card-content">
                             <span class="card-title grey-text text-darken-4">Card Title</span>
@@ -122,7 +122,7 @@
                     </div>
                 </div>
 
-                <div class="col s4">
+                <div class="col s12">
                     <div class="card">
                         <div class="card-content">
                             <span class="card-title grey-text text-darken-4">Card Title</span>
@@ -135,7 +135,7 @@
                     </div>
                 </div>
 
-                <div class="col s4">
+                <div class="col s12">
                     <div class="card">
                         <div class="card-content">
                             <span class="card-title grey-text text-darken-4">Card Title</span>
