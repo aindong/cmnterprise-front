@@ -12,7 +12,7 @@
 @stop
 
 @section('content')
-    <div class="">
+    <div class="" style="background: url('/img/bg.png')">
         <div class="row">
             <div class="col s4">
                 <div class="card">
