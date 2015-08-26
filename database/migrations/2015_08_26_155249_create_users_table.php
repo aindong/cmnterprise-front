@@ -21,6 +21,8 @@ class CreateUsersTable extends Migration
             $table->string('middlename', 50);
             $table->timestamp('birthdate');
             $table->string('gender', 10);
+            $table->string('mobilenumber', 20);
+            $table->string('nationality', 30);
             $table->timestamps();
         });
     }

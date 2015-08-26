@@ -11,6 +11,16 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+        \App\Models\User::create([
+            'email'         => 'alleo.indong@gmail.com',
+            'password'      => \Hash::make('test'),
+            'firstname'     => 'alleo',
+            'lastname'      => 'indong',
+            'middlename'    => 'pineda',
+            'birthdate'     => '1992-10-08',
+            'gender'        => 'male',
+            'mobilenumber'  => '09253072394',
+            'nationality'   => 'filipino'
+        ]);
     }
 }
