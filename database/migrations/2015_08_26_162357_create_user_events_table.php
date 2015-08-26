@@ -17,7 +17,8 @@ class CreateUserEventsTable extends Migration
             $table->integer('user_id')->unsigned();
             $table->integer('event_id')->unsigned();
             $table->integer('bike_type_id')->unsigned();
-            $table->integer('event_category_id')->unsigned();
+            $table->string('category', 30);
+//            $table->integer('event_category_id')->unsigned();
             $table->string('tshirt_size', 10);
             $table->string('status', 20);
             $table->timestamps();
