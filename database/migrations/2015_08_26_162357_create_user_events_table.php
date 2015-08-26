@@ -20,9 +20,9 @@ class CreateUserEventsTable extends Migration
             $table->string('category', 30);
 //            $table->integer('event_category_id')->unsigned();
             $table->string('tshirt_size', 10);
-            $table->string('racer_bib_no', 20);
-            $table->string('racer_tag_no', 20);
-            $table->string('status', 20);
+            $table->string('racer_bib_no', 20)->nullable();
+            $table->string('racer_tag_no', 20)->nullable();
+            $table->integer('transaction_id')->unsinged()->nullable();
             $table->timestamps();
         });
     }
