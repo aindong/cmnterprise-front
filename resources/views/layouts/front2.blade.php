@@ -6,7 +6,7 @@
 
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="/materialize/css/materialize.min.css"  media="screen,projection"/>
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     @yield('styles')
 </head>
 
@@ -14,7 +14,7 @@
 
 <header>
     <nav>
-        <ul class="left" style="margin-left: 20px">C&M Enterprise - Events</ul>
+        <ul class="left" style="margin-left: 20px">C&M Enterprise</ul>
         <ul class="right hide-on-med-and-down">
             <li><a href="#!">First Sidebar Link</a></li>
             <li><a href="#!">Second Sidebar Link</a></li>
