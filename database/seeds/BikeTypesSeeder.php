@@ -11,6 +11,12 @@ class BikeTypesSeeder extends Seeder
      */
     public function run()
     {
-        //
+        \App\Models\BikeType::create([
+            'name'  => 'Road',
+        ]);
+
+        \App\Models\BikeType::create([
+            'name'  => 'Mt. Bike',
+        ]);
     }
 }
