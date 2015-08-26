@@ -21,7 +21,7 @@ $app = new Laravel\Lumen\Application(
 
 // $app->withFacades();
 
-// $app->withEloquent();
+ $app->withEloquent();
 
 /*
 |--------------------------------------------------------------------------
@@ -94,6 +94,7 @@ $app->singleton(
 
 $app->group(['namespace' => 'App\Http\Controllers'], function ($app) {
     require __DIR__.'/../app/Http/routes.php';
+    require __DIR__.'/../app/Http/Api/routes.php';
 });
 
 return $app;
