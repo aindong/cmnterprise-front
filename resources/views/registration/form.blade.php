@@ -6,7 +6,7 @@
             <div class="card">
                 <div class="card-content">
                     <span class="card-title grey-text text-darken-4">
-                        <span style="font-size: 35px;"> SHIMANO </span>Monasterio de Tarlac 2015
+                        <span style="font-size: 35px;"> SHIMANO GRAN FONDO </span>Monasterio de Tarlac 2015
                     </span>
                     <form>
                         <div class="row">
@@ -29,48 +29,6 @@
                                             <input name="category" type="checkbox" id="elite" />
                                             <label for="elite">Elite</label>
                                         </p>
-                                    </div>
-
-                                    <div class="input-field col s8">
-                                        <select>
-                                            <option value="" disabled selected>Choose your Bike</option>
-                                            <option value="1">Mountain Bike</option>
-                                            <option value="2">Road Racer</option>
-                                            <option value="3">Others</option>
-                                        </select>
-                                        <label>Bike Category</label>
-                                    </div>
-                                    <div class="input-field col s4">
-                                        <input id="others" type="text" class="validate">
-                                        <label for="others">Others</label>
-                                    </div>
-
-                                    <div class="input-field col s6">
-                                        <select>
-                                            <option value="" disabled selected>Choose your Age</option>
-                                            <option value="1">Under 20</option>
-                                            <option value="2">21 to 30</option>
-                                            <option value="3">31 to 40</option>
-                                            <option value="4">41 to 50</option>
-                                            <option value="5">51 Above</option>
-                                            <option value="6">35 Below</option>
-                                            <option value="7">36 Above</option>
-                                        </select>
-                                        <label>Age Category</label>
-                                    </div>
-
-                                    <div class="input-field col s6">
-                                        <select>
-                                            <option value="" disabled selected>Choose your T-Shirt</option>
-                                            <option value="1">XXS</option>
-                                            <option value="2">XS</option>
-                                            <option value="3">S</option>
-                                            <option value="4">M</option>
-                                            <option value="5">L</option>
-                                            <option value="6">XL</option>
-                                            <option value="7">XXL</option>
-                                        </select>
-                                        <label>T-Shirt Size</label>
                                     </div>
 
                                     <div class="input-field col s4">
@@ -118,6 +76,53 @@
                                     <div class="input-field col s12">
                                         <textarea id="address" class="materialize-textarea" length="120"></textarea>
                                         <label for="address">Address</label>
+                                    </div>
+
+                                    <div class="col s12">
+                                        <span class="card-title grey-text text-darken-4">
+                                            Categories
+                                        </span>
+                                    </div>
+                                    <div class="input-field col s8">
+                                        <select>
+                                            <option value="" disabled selected>Choose your Bike</option>
+                                            <option value="1">Mountain Bike</option>
+                                            <option value="2">Road Racer</option>
+                                            <option value="3">Others</option>
+                                        </select>
+                                        <label>Bike Category</label>
+                                    </div>
+                                    <div class="input-field col s4">
+                                        <input id="others" type="text" class="validate">
+                                        <label for="others">Others</label>
+                                    </div>
+
+                                    <div class="input-field col s6">
+                                        <select>
+                                            <option value="" disabled selected>Choose your Age</option>
+                                            <option value="1">Under 20</option>
+                                            <option value="2">21 to 30</option>
+                                            <option value="3">31 to 40</option>
+                                            <option value="4">41 to 50</option>
+                                            <option value="5">51 Above</option>
+                                            <option value="6">35 Below</option>
+                                            <option value="7">36 Above</option>
+                                        </select>
+                                        <label>Age Category</label>
+                                    </div>
+
+                                    <div class="input-field col s6">
+                                        <select>
+                                            <option value="" disabled selected>Choose your T-Shirt</option>
+                                            <option value="1">XXS</option>
+                                            <option value="2">XS</option>
+                                            <option value="3">S</option>
+                                            <option value="4">M</option>
+                                            <option value="5">L</option>
+                                            <option value="6">XL</option>
+                                            <option value="7">XXL</option>
+                                        </select>
+                                        <label>T-Shirt Size</label>
                                     </div>
 
                                     <div class="col s12 right-align">
