@@ -15,6 +15,7 @@ $app->get('/', 'Home\HomeController@index');
 
 // Events
 $app->get('/events', 'Events\EventsController@index');
+$app->get('/events/{slug}', 'Events\EventsController@eventPage');
 
 // Admin Dashboard
 $app->get('/admin/dashboard', 'Admin\DashboardController@index');
