@@ -84,7 +84,7 @@
                                         </span>
                                     </div>
                                     <div class="input-field col s8">
-                                        <select>
+                                        <select class="browser-default">
                                             <option value="" disabled selected>Choose your Bike</option>
                                             <option value="1">Mountain Bike</option>
                                             <option value="2">Road Racer</option>
@@ -98,7 +98,7 @@
                                     </div>
 
                                     <div class="input-field col s6">
-                                        <select>
+                                        <select class="browser-default">
                                             <option value="" disabled selected>Choose your Age</option>
                                             <option value="1">Under 20</option>
                                             <option value="2">21 to 30</option>
@@ -112,7 +112,7 @@
                                     </div>
 
                                     <div class="input-field col s6">
-                                        <select>
+                                        <select class="browser-default">
                                             <option value="" disabled selected>Choose your T-Shirt</option>
                                             <option value="1">XXS</option>
                                             <option value="2">XS</option>
