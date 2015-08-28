@@ -24,29 +24,41 @@ class EventsController extends Controller
         return view('events.event')->with('event', $event);
     }
 
-    public function eventRegistration()
+    public function eventRegistration($slug)
     {
-        $merchantRef    = '';
-        $amount         = '';
+        $merchantRef    = '123456789123456';
+        $amount         = '200';
         $transactURL    = 'http://testpay.7-eleven.com.ph:8888/transact';
         $inquireURL     = 'http:// testpay.7-eleven.com.ph:8888/inquire';
         $transactionKey = '628e936f45884030ac1f34bcde9c28efa6ae9c839623b45b8942bd4490e1f05d';
-        $merchantID     = '7-Eleven';
-        $successURL     = '';
-        $failURL        = '';
+        $merchantID     = '123456789123456';
+        $successURL     = '/events/'.$slug.'/success';
+        $failURL        = '/events/'.$slug.'/failed';
+
         $token = sha1($merchantID . $merchantRef . '{' . $transactionKey . '}');
 
         $fields = [
-            'merchantID'    => $merchantID,
-            'merchantRef'   => $merchantRef,
-            'amount'        => $amount,
-            'successURL'    => $successURL,
-            'failURL'       => $failURL,
-            'token'         => $token
+            'merchantID'            => $merchantID,
+            'merchantRef'           => $merchantRef,
+            'amount'                => $amount,
+            'successURL'            => $successURL,
+            'failURL'               => $failURL,
+            'token'                 => $token,
+            'returnPaymentDetails'  => 'Y'
         ];
 
         $params = http_build_query($fields);
 
-        \URL::to($transactURL.'?'.$params);
+        return redirect()->to($transactURL.'?'.$params);
+    }
+
+    public function paymentSuccess($slug)
+    {
+        echo 'Success payment';
+    }
+
+    public function paymentFailed($slug)
+    {
+        echo 'Failed payment';
     }
 }

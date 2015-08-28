@@ -8,7 +8,7 @@
                     <span class="card-title grey-text text-darken-4">
                         <span style="font-size: 35px;"> SHIMANO GRAN FONDO </span>Monasterio de Tarlac 2015
                     </span>
-                    <form>
+                    <form action="" method="POST">
                         <div class="row">
                             <div class="col s12">
                                 <div class="row">

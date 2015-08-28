@@ -17,6 +17,8 @@ $app->get('/', 'Home\HomeController@index');
 $app->get('/events', 'Events\EventsController@index');
 $app->get('/events/{slug}', 'Events\EventsController@eventPage');
 $app->post('/events/{slug}', 'Events\EventsController@eventRegistration');
+$app->get('/events/{slug}/success', 'Events\EventsController@paymentSuccess');
+$app->get('/events/{slug}/failed', 'Events\EventsController@paymentFailed');
 
 // Admin Dashboard
 $app->get('/admin/dashboard', 'Admin\DashboardController@index');
