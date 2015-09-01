@@ -23,6 +23,7 @@ class CreateUsersTable extends Migration
             $table->string('gender', 10);
             $table->string('mobilenumber', 20);
             $table->string('nationality', 30);
+            $table->mediumText('address');
             $table->timestamps();
         });
     }
