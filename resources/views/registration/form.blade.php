@@ -84,13 +84,13 @@
                                         </span>
                                     </div>
                                     <div class="input-field col s8">
+                                        <p>Bike Category</p>
                                         <select class="browser-default">
                                             <option value="" disabled selected>Choose your Bike</option>
                                             <option value="1">Mountain Bike</option>
                                             <option value="2">Road Racer</option>
                                             <option value="3">Others</option>
                                         </select>
-                                        <label>Bike Category</label>
                                     </div>
                                     <div class="input-field col s4">
                                         <input id="others" type="text" class="validate">
@@ -98,6 +98,7 @@
                                     </div>
 
                                     <div class="input-field col s6">
+                                        <p>Age Category</p>
                                         <select class="browser-default">
                                             <option value="" disabled selected>Choose your Age</option>
                                             <option value="1">Under 20</option>
@@ -108,10 +109,10 @@
                                             <option value="6">35 Below</option>
                                             <option value="7">36 Above</option>
                                         </select>
-                                        <label>Age Category</label>
                                     </div>
 
                                     <div class="input-field col s6">
+                                        <p>T-Shirt Size</p>
                                         <select class="browser-default">
                                             <option value="" disabled selected>Choose your T-Shirt</option>
                                             <option value="1">XXS</option>
@@ -122,7 +123,6 @@
                                             <option value="6">XL</option>
                                             <option value="7">XXL</option>
                                         </select>
-                                        <label>T-Shirt Size</label>
                                     </div>
 
                                     <div class="col s12 right-align">
