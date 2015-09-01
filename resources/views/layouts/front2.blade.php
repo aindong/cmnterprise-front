@@ -10,11 +10,11 @@
     @yield('styles')
 </head>
 
-<body>
+<body style="background: url('/img/bg.png')">
 
 <header>
     <nav>
-        <ul class="left" style="margin-left: 20px">C&M Enterprise</ul>
+        <ul class="left" style="margin-left: 20px"><img src="/img/logo1.png" alt="" style="width: 300px;height: auto;vertical-align: middle;"></ul>
         <ul class="right hide-on-med-and-down">
             <li><a href="#!">First Sidebar Link</a></li>
             <li><a href="#!">Second Sidebar Link</a></li>
@@ -32,6 +32,7 @@
 <!--Import jQuery before materialize.js-->
 <script type="text/javascript" src="/js/jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="/materialize/js/materialize.min.js"></script>
+<script type="text/javascript" src="/js/moment.js"></script>
 
 <script>
     $(function() {
@@ -39,7 +40,8 @@
 
         $('.datepicker').pickadate({
             selectMonths: true, // Creates a dropdown to control month
-            selectYears: 15 // Creates a dropdown of 15 years to control year
+            selectYears: 90, // Creates a dropdown of 15 years to control year
+            max: new Date()
         });
     });
 </script>
