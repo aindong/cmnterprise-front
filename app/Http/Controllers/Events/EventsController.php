@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Events;
 use App\Http\Controllers\Controller;
 use App\Models\Event;
 use App\Models\User;
+use App\Models\UserEvent;
+use App\Models\UserTransaction;
 use Illuminate\Http\Request;
 
 class EventsController extends Controller
@@ -38,6 +40,8 @@ class EventsController extends Controller
 
         $refNo = uniqid();
 
+        $event = Event::where('slug', $slug)->first();
+
         // REGISTER A USER
         $user = $this->registerUser($input);
 
@@ -48,10 +52,10 @@ class EventsController extends Controller
         }
 
         // REGISTER A USER TO EVENT
-        $this->registerUserToEvent($user);
+        $this->registerUserToEvent($input, $user, $event);
 
         // RECORD TRANSACTION
-        $this->recordTransaction($refNo, '7-Connect');
+        $this->recordTransaction($refNo, '7-Connect', $user, $event);
 
         // Get payment uri
         $paymentUrl = $this->processPayment($refNo, $slug);
@@ -86,14 +90,32 @@ class EventsController extends Controller
         return $user;
     }
 
-    private function registerUserToEvent($user)
+    private function registerUserToEvent($input, $user, $event)
     {
+        $userEvent = new UserEvent;
+        $userEvent->user_id         = $user->id;
+        $userEvent->event_id        = $event->id;
+        $userEvent->bike_type       = $input['bike_type'];
+        $userEvent->is_elite        = $input['is_elite'];
+        $userEvent->category        = $input['category'];
+        $userEvent->tshirt_size     = $input['tshirt_size'];
+        $userEvent->save();
 
+        return $userEvent;
     }
 
-    private function recordTransaction($refNo, $paymentMethod)
+    private function recordTransaction($refNo, $paymentMethod, $user, $event)
     {
+        $userTrans = new UserTransaction;
+        $userTrans->user_id         = $user->id;
+        $userTrans->transaction_no  = $refNo;
+        $userTrans->event_id        = $event->id;
+        $userTrans->payment_method  = $paymentMethod;
+        $userTrans->amount          = 500;
+        $userTrans->status          = 'unpaid';
+        $userTrans->save();
 
+        return $userTrans;
     }
 
     private function processPayment($refNo, $slug)
