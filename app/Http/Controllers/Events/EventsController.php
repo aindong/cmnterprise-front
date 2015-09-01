@@ -35,8 +35,8 @@ class EventsController extends Controller
         $inquireURL     = 'http:// testpay.7-eleven.com.ph:8888/inquire';
         $transactionKey = 'fc9c9d077b2bb26d559dab5df8a457703ce14d894dc0ffb2dee7bf6dfaaff1f6';
         $merchantID     = 'shimano_test';
-        $successURL     = '/events/'.$slug.'/success';
-        $failURL        = '/events/'.$slug.'/failed';
+        $successURL     = url('/').'/events/'.$slug.'/success';
+        $failURL        = url('/').'/events/'.$slug.'/failed';
 
         $token = sha1($merchantID . $merchantRef . '{' . $transactionKey . '}');
 
