@@ -15,6 +15,7 @@ class CreateUserTransactiosTable extends Migration
         Schema::create('user_transactions', function (Blueprint $table) {
             $table->increments('id');
             $table->string('transaction_no');
+            $table->string('payment_reference');
             $table->integer('user_id')->unsigned();
             $table->integer('event_id')->unsigned();
             $table->string('payment_method', 50);

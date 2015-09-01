@@ -16,13 +16,12 @@ class CreateUserEventsTable extends Migration
             $table->increments('id');
             $table->integer('user_id')->unsigned();
             $table->integer('event_id')->unsigned();
-            $table->integer('bike_type_id')->unsigned();
+            $table->string('bike_type', 40);
+            $table->tinyInteger('is_elite');
             $table->string('category', 30);
-//            $table->integer('event_category_id')->unsigned();
             $table->string('tshirt_size', 10);
             $table->string('racer_bib_no', 20)->nullable();
             $table->string('racer_tag_no', 20)->nullable();
-            $table->integer('transaction_id')->unsinged()->nullable();
             $table->timestamps();
         });
     }
