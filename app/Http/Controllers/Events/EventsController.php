@@ -26,12 +26,15 @@ class EventsController extends Controller
 
     public function eventRegistration($slug)
     {
-        $merchantRef    = '123456789123456';
+
+        $refNo = uniqid();
+
+        $merchantRef    = $refNo;
         $amount         = '200';
         $transactURL    = 'http://testpay.7-eleven.com.ph:8888/transact';
         $inquireURL     = 'http:// testpay.7-eleven.com.ph:8888/inquire';
-        $transactionKey = '628e936f45884030ac1f34bcde9c28efa6ae9c839623b45b8942bd4490e1f05d';
-        $merchantID     = '123456789123456';
+        $transactionKey = 'fc9c9d077b2bb26d559dab5df8a457703ce14d894dc0ffb2dee7bf6dfaaff1f6';
+        $merchantID     = 'shimano_test';
         $successURL     = '/events/'.$slug.'/success';
         $failURL        = '/events/'.$slug.'/failed';
 
