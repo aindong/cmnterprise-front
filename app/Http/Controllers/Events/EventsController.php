@@ -85,6 +85,7 @@ class EventsController extends Controller
         $user->gender       = $input['gender'];
         $user->mobilenumber = $input['mobilenumber'];
         $user->nationality  = $input['nationality'];
+        $user->email        = $input['email'];
         $user->save();
 
         return $user;
