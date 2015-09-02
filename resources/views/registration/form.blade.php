@@ -80,12 +80,8 @@
                                         <input id="email" name="email" type="email" class="validation">
                                         <label for="email" class="warning">Email</label>
                                     </div>
-                                    <div class="input-field col s6">
-                                        <input id="password" name="password" type="password" class="validation">
-                                        <label for="password" class="warning">Password</label>
-                                    </div>
 
-                                    <div class="input-field col s12">
+                                    <div class="input-field col s6">
                                         <textarea id="address" name="address" class="validation materialize-textarea" length="120"></textarea>
                                         <label for="address" class="warning">Address</label>
                                     </div>
