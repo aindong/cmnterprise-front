@@ -19,6 +19,8 @@ class PaymentsController extends Controller
 
         $input2 = json_encode($input);
         Log::info('7-Connect: '.$input2);
+        Log::info('7-Connect-type: ' . $input['type']);
+        Log::info('7-Connect-merchant-ref: ' . $input['merchantRef']);
 
         echo $this->checkData($input);
     }
