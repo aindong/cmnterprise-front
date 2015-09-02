@@ -122,7 +122,7 @@ class EventsController extends Controller
     private function processPayment($refNo, $slug)
     {
         $merchantRef    = $refNo;
-        $amount         = '200';
+        $amount         = '500';
 
         $successURL     = url('/').'/events/'.$slug.'/success';
         $failURL        = url('/').'/events/'.$slug.'/failed';
