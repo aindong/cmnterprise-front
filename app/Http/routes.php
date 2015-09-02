@@ -21,6 +21,8 @@ $app->get('/events/{slug}/success', 'Events\EventsController@paymentSuccess');
 $app->get('/events/{slug}/failed', 'Events\EventsController@paymentFailed');
 
 $app->post('/payment/postback', 'Payments\PaymentsController@postback');
+$app->post('/payment/validate', 'Payments\PaymentsController@postback');
+$app->post('/payment/confirm', 'Payments\PaymentsController@postback');
 
 // Admin Dashboard
 $app->get('/admin/dashboard', 'Admin\DashboardController@index');

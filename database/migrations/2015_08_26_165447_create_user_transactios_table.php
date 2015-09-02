@@ -22,6 +22,7 @@ class CreateUserTransactiosTable extends Migration
             $table->double('amount');
             $table->timestamp('payment_date');
             $table->string('status', 50);
+            $table->text('transaction_data');
             $table->timestamps();
         });
     }
