@@ -11,6 +11,7 @@ class PaymentsController extends Controller
     {
         $input = $request->all();
 
+        $input = json_encode($input);
         Log::info('7-Connect: '.$input);
     }
 }
