@@ -9,8 +9,9 @@
                         <img src="/img/events_banner_1.jpg" alt="" style="height: 100%;width: 100%;">
                     </div>
                     <span class="card-title grey-text text-darken-4">
-                        <span style="font-size: 35px;"> SHIMANO GRAN FONDO </span>Monasterio de Tarlac 2015
+                        {{--<span style="font-size: 35px;"> SHIMANO GRAN FONDO </span>Monasterio de Tarlac 2015--}}
                     </span>
+                    <div style="margin-bottom: 20px;"></div>
                     <form action="" id="registrationForm" method="POST">
                         <div class="row">
                             <div class="col s12">
