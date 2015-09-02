@@ -10,6 +10,6 @@ class PaymentsController extends Controller
     {
         $input = $request->all();
 
-        Log::info('7-Connect: '.$input);
+        \Log::info('7-Connect: '.$input);
     }
 }
