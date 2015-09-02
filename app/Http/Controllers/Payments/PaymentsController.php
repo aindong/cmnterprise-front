@@ -3,6 +3,7 @@ namespace App\Http\Controllers\Payments;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Log;
 
 class PaymentsController extends Controller
 {
@@ -10,6 +11,6 @@ class PaymentsController extends Controller
     {
         $input = $request->all();
 
-        \Log::info('7-Connect: '.$input);
+        Log::info('7-Connect: '.$input);
     }
 }
