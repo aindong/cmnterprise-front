@@ -43,19 +43,19 @@ class EventsController extends Controller
         $event = Event::where('slug', $slug)->first();
 
         // REGISTER A USER
-        $user = $this->registerUser($input);
-
-        if (! $user) {
-            return redirect()
-                ->back()
-                ->withInput();
-        }
+//        $user = $this->registerUser($input);
+//
+//        if (! $user) {
+//            return redirect()
+//                ->back()
+//                ->withInput();
+//        }
 
         // REGISTER A USER TO EVENT
-        $this->registerUserToEvent($input, $user, $event);
+//        $this->registerUserToEvent($input, $user, $event);
 
         // RECORD TRANSACTION
-        $this->recordTransaction($refNo, '7-Connect', $user, $event);
+        $this->recordTransaction($refNo, '7-Connect', 1, $event);
 
         // Get payment uri
         $paymentUrl = $this->processPayment($refNo, $slug);
