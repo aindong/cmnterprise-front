@@ -75,7 +75,6 @@ class EventsController extends Controller
 
     private function registerUser($input)
     {
-        print_r($input); exit;
         $user = null;
 
         $user = new User;
