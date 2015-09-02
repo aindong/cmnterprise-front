@@ -7,6 +7,7 @@ use App\Models\Event;
 use App\Models\User;
 use App\Models\UserEvent;
 use App\Models\UserTransaction;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 
 class EventsController extends Controller
@@ -74,14 +75,14 @@ class EventsController extends Controller
     }
 
     private function registerUser($input)
-    {print_r(strtotime($input['birthdate']));exit;
+    {
         $user = null;
 
         $user = new User;
         $user->firstname    = $input['firstname'];
         $user->lastname     = $input['lastname'];
         $user->middlename   = $input['middlename'];
-        $user->birthdate    = strtotime($input['birthdate']);
+        $user->birthdate    = Carbon::createFromTimestamp(strtotime($input['birthdate']))->toDateString();
         $user->gender       = $input['gender'];
         $user->mobilenumber = $input['mobilenumber'];
         $user->nationality  = $input['nationality'];
