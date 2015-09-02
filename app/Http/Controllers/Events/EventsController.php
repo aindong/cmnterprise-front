@@ -12,10 +12,10 @@ use Illuminate\Http\Request;
 class EventsController extends Controller
 {
 
-    protected $transactURL    = 'http://testpay.7-eleven.com.ph:8888/transact';
-    protected $inquireURL     = 'http:// testpay.7-eleven.com.ph:8888/inquire';
-    protected $transactionKey = 'fc9c9d077b2bb26d559dab5df8a457703ce14d894dc0ffb2dee7bf6dfaaff1f6';
-    protected $merchantID     = 'shimano_test';
+    protected $transactURL    = 'https://pay.7-eleven.com.ph/transact';
+    protected $inquireURL     = 'https://pay.7-eleven.com.ph/inquire';
+    protected $transactionKey = '46b67a162275d93b09d3320a1a9ba7a8125cfb804b2f50052ea8f61ccff642d3';
+    protected $merchantID     = 'shimano';
 
     public function index()
     {
@@ -43,19 +43,19 @@ class EventsController extends Controller
         $event = Event::where('slug', $slug)->first();
 
         // REGISTER A USER
-//        $user = $this->registerUser($input);
-//
-//        if (! $user) {
-//            return redirect()
-//                ->back()
-//                ->withInput();
-//        }
+        $user = $this->registerUser($input);
+
+        if (! $user) {
+            return redirect()
+                ->back()
+                ->withInput();
+        }
 
         // REGISTER A USER TO EVENT
-//        $this->registerUserToEvent($input, $user, $event);
+        $this->registerUserToEvent($input, $user, $event);
 
         // RECORD TRANSACTION
-        $this->recordTransaction($refNo, '7-Connect', 1, $event);
+        $this->recordTransaction($refNo, '7-Connect', $user, $event);
 
         // Get payment uri
         $paymentUrl = $this->processPayment($refNo, $slug);
@@ -108,7 +108,7 @@ class EventsController extends Controller
     private function recordTransaction($refNo, $paymentMethod, $user, $event)
     {
         $userTrans = new UserTransaction;
-        $userTrans->user_id         = 1;
+        $userTrans->user_id         = $user->id;
         $userTrans->transaction_no  = $refNo;
         $userTrans->event_id        = $event->id;
         $userTrans->payment_method  = $paymentMethod;

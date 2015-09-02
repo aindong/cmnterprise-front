@@ -8,10 +8,10 @@ use Log;
 
 class PaymentsController extends Controller
 {
-    protected $transactURL    = 'http://testpay.7-eleven.com.ph:8888/transact';
-    protected $inquireURL     = 'http:// testpay.7-eleven.com.ph:8888/inquire';
-    protected $transactionKey = 'fc9c9d077b2bb26d559dab5df8a457703ce14d894dc0ffb2dee7bf6dfaaff1f6';
-    protected $merchantID     = 'shimano_test';
+    protected $transactURL    = 'https://pay.7-eleven.com.ph/transact';
+    protected $inquireURL     = 'https://pay.7-eleven.com.ph/inquire';
+    protected $transactionKey = '46b67a162275d93b09d3320a1a9ba7a8125cfb804b2f50052ea8f61ccff642d3';
+    protected $merchantID     = 'shimano';
 
     public function postback(Request $request)
     {
