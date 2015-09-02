@@ -82,7 +82,7 @@
                                         <label for="email" class="warning">Email</label>
                                     </div>
 
-                                    <div class="input-field col s6">
+                                    <div class="input-field col s12">
                                         <textarea id="address" name="address" class="validation materialize-textarea" length="120"></textarea>
                                         <label for="address" class="warning">Address</label>
                                     </div>
