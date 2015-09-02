@@ -1,5 +1,9 @@
 @extends('layouts.front2')
 
+@section('headers')
+    <title>Shimano Gran Fondo 2015 | C&M Enterprise</title>
+@stop
+
 @section('styles')
     <style>
         .card-title.event {
