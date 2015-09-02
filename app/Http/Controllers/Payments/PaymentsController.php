@@ -49,6 +49,7 @@ class PaymentsController extends Controller
                     $data = [
                         'payment_reference'  => $input['sevenConnectId'],
                         'transaction_data'   => serialize($input),
+                        'status'             => 'posted'
                     ];
 
                     $transaction = UserTransaction::where('transaction_no', $input['merchantRef'])
