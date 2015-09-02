@@ -96,7 +96,7 @@ class EventsController extends Controller
         $userEvent->user_id         = $user->id;
         $userEvent->event_id        = $event->id;
         $userEvent->bike_type       = $input['bike_type'];
-        $userEvent->is_elite        = $input['is_elite'];
+        $userEvent->is_elite        = isset($input['is_elite']) ? $input['is_elite'] : 0;
         $userEvent->category        = $input['category'];
         $userEvent->tshirt_size     = $input['tshirt_size'];
         $userEvent->save();
