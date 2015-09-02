@@ -108,7 +108,7 @@ class EventsController extends Controller
     private function recordTransaction($refNo, $paymentMethod, $user, $event)
     {
         $userTrans = new UserTransaction;
-        $userTrans->user_id         = $user->id;
+        $userTrans->user_id         = 1;
         $userTrans->transaction_no  = $refNo;
         $userTrans->event_id        = $event->id;
         $userTrans->payment_method  = $paymentMethod;
