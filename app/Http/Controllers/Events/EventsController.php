@@ -17,7 +17,7 @@ class EventsController extends Controller
     protected $inquireURL     = 'https://pay.7-eleven.com.ph/inquire';
     protected $transactionKey = '46b67a162275d93b09d3320a1a9ba7a8125cfb804b2f50052ea8f61ccff642d3';
     protected $merchantID     = 'shimano';
-    protected $amount         = 10;
+    protected $amount         = 500;
 
     public function index()
     {
