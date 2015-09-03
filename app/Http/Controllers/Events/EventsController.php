@@ -17,6 +17,7 @@ class EventsController extends Controller
     protected $inquireURL     = 'https://pay.7-eleven.com.ph/inquire';
     protected $transactionKey = '46b67a162275d93b09d3320a1a9ba7a8125cfb804b2f50052ea8f61ccff642d3';
     protected $merchantID     = 'shimano';
+    protected $amount         = 10;
 
     public function index()
     {
@@ -113,7 +114,7 @@ class EventsController extends Controller
         $userTrans->transaction_no  = $refNo;
         $userTrans->event_id        = $event->id;
         $userTrans->payment_method  = $paymentMethod;
-        $userTrans->amount          = 500;
+        $userTrans->amount          = $this->amount;
         $userTrans->status          = 'unpaid';
         $userTrans->save();
 
@@ -123,7 +124,7 @@ class EventsController extends Controller
     private function processPayment($refNo, $slug)
     {
         $merchantRef    = $refNo;
-        $amount         = '500';
+        $amount         = $this->amount;
 
         $successURL     = url('/').'/events/'.$slug.'/success';
         $failURL        = url('/').'/events/'.$slug.'/failed';
