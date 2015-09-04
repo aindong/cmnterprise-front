@@ -74,7 +74,9 @@
                 <h4 class="modal-title" id="myModalLabel">Current Event</h4>
             </div>
             <div class="modal-body">
-                <img src="/img/events_banner_1.jpg" alt="" class="img-responsive"/>
+                <a href="/events/shimano-gran-fondo-2015">
+                    <img src="/img/events_banner_1.jpg" alt="" class="img-responsive"/>
+                </a>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
