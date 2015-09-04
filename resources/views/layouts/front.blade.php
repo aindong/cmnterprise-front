@@ -74,13 +74,20 @@
                 <h4 class="modal-title" id="myModalLabel">Current Event</h4>
             </div>
             <div class="modal-body">
-                <img src="/img/events_banner_1.jpg" alt=""/>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 
-                <a href="/events/shimano-gran-fondo-2015" role="button" class="btn btn-primary">Register for this event</a>
             </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <img src="/img/events_banner_1.jpg" alt=""/>
+            <a href="/events/shimano-gran-fondo-2015" role="button" class="btn btn-primary">Register for this event</a>
         </div>
     </div>
 </div>
@@ -98,7 +105,7 @@
 
 <script>
     $(function() {
-        $('#myModal').modal('show');
+        $('#bs-example-modal-lg').modal('show');
     });
 </script>
 
