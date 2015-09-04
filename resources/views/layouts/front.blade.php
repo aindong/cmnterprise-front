@@ -71,7 +71,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">Current Event</h4>
+                <h5 class="modal-title" id="myModalLabel">Upcoming Event</h5>
             </div>
             <div class="modal-body">
                 <a href="/events/shimano-gran-fondo-2015">
