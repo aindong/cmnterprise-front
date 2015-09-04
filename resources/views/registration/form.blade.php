@@ -101,7 +101,7 @@
 
                                     <div class="input-field col s12">
                                         <label class="warning" for="category">Age Category</label>
-                                        <input id="category" name="category" type="text" placeholder="Age Category" class="validation" disabled>
+                                        <input id="category" name="category" type="text" placeholder="Age Category" class="validation" disabled style="color: #000 !important; border-bottom: #000;">
                                     </div>
 
                                     <div class="input-field col s6">
