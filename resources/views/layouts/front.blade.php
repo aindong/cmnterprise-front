@@ -67,27 +67,20 @@
 
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-dialog modal-lg" role="document" style="width: 60%;">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <h4 class="modal-title" id="myModalLabel">Current Event</h4>
             </div>
             <div class="modal-body">
+                <img src="/img/events_banner_1.jpg" alt=""/>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 
+                <a href="/events/shimano-gran-fondo-2015" role="button" class="btn btn-primary">Register for this event</a>
             </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <img src="/img/events_banner_1.jpg" alt=""/>
-            <a href="/events/shimano-gran-fondo-2015" role="button" class="btn btn-primary">Register for this event</a>
         </div>
     </div>
 </div>
@@ -105,7 +98,7 @@
 
 <script>
     $(function() {
-        $('#bs-example-modal-lg').modal('show');
+        $('#myModal').modal('show');
     });
 </script>
 
