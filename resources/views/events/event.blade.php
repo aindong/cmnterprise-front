@@ -24,28 +24,32 @@
         $(document).ready(function() {
             $('select').material_select();
             $('input#input_text, textarea#textarea1').characterCounter();
+
+            checkCategory();
         });
 
         var bday = 0;
         var age = 0;
         var gender = "";
 
-        $( "#birthdate" ).change(function() {
-            bday = $('#birthdate').val();
-            age = Math.floor(moment(new Date()).diff(moment(bday, "DD MMM YYYY"),'years',true));
-
+        $('#registrationForm').on('submit', function() {
             checkCategory();
-
         });
-        $( "#gender" ).change(function() {
-            gender = $('#gender').val();
 
+        $( "#birthdate" ).change(function() {
             checkCategory();
+        });
 
+        $( "#gender" ).change(function() {
+            checkCategory();
         });
 
         function checkCategory()
         {
+            bday = $('#birthdate').val();
+            age = Math.floor(moment(new Date()).diff(moment(bday, "DD MMM YYYY"),'years',true));
+            gender = $('#gender').val();
+
             if( gender == "female" && age != 0)
             {
                 if ( age <= 35 )
