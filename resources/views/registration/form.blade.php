@@ -59,6 +59,7 @@
                                             <option value="filipino">Filipino</option>
                                             <option value="american">American</option>
                                             <option value="korean">Korean</option>
+                                            <option value="others">Others</option>
                                         </select>
                                         <label class="warning">Nationality</label>
                                     </div>
@@ -80,6 +81,11 @@
                                     <div class="input-field col s6">
                                         <input id="email" name="email" type="email" class="validation">
                                         <label for="email" class="warning">Email</label>
+                                    </div>
+
+                                    <div class="input-field col s6">
+                                        <input id="affiliation" name="affiliation" type="text">
+                                        <label for="affiliation" class="warning">Affiliation</label>
                                     </div>
 
                                     <div class="input-field col s12">

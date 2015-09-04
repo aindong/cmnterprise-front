@@ -24,6 +24,7 @@ class CreateUsersTable extends Migration
             $table->string('mobilenumber', 20);
             $table->string('nationality', 30);
             $table->mediumText('address');
+            $table->string('affiliation', 100);
             $table->timestamps();
         });
     }
