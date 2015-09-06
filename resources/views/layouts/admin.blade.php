@@ -32,6 +32,7 @@
     <link href="/admin/js/plugins/perfect-scrollbar/perfect-scrollbar.css" type="text/css" rel="stylesheet" media="screen,projection">
     <link href="/admin/js/plugins/jvectormap/jquery-jvectormap.css" type="text/css" rel="stylesheet" media="screen,projection">
     <link href="/admin/js/plugins/chartist-js/chartist.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="js/plugins/data-tables/css/jquery.dataTables.min.css" type="text/css" rel="stylesheet" media="screen,projection">
 
     <!-- ================================================
     Page Styles
@@ -117,16 +118,16 @@
                 </li>
 
                 <li class="bold">
-                    <a href="/admin/dashboard" class="waves-effect waves-cyan">
-                        <i class="mdi-image-image"></i> Events
+                    <a href="/admin/registrants" class="waves-effect waves-cyan">
+                        <i class="mdi-image-image"></i> Registrants
                     </a>
                 </li>
 
-                <li class="bold">
-                    <a href="/admin/dashboard" class="waves-effect waves-cyan">
-                        <i class="mdi-image-image"></i> Medias
-                    </a>
-                </li>
+                {{--<li class="bold">--}}
+                    {{--<a href="/admin/dashboard" class="waves-effect waves-cyan">--}}
+                        {{--<i class="mdi-image-image"></i> Medias--}}
+                    {{--</a>--}}
+                {{--</li>--}}
 
             </ul>
 
@@ -269,27 +270,14 @@ Scripts
 <!--scrollbar-->
 <script type="text/javascript" src="/admin/js/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
 
-<!-- chartjs -->
-<script type="text/javascript" src="/admin/js/plugins/chartjs/chart.min.js"></script>
-<script type="text/javascript" src="/admin/js/plugins/chartjs/chart-script.js"></script>
-
-<!-- sparkline -->
-<script type="text/javascript" src="/admin/js/plugins/sparkline/jquery.sparkline.min.js"></script>
-<script type="text/javascript" src="/admin/js/plugins/sparkline/sparkline-script.js"></script>
-
-<!--jvectormap-->
-<script type="text/javascript" src="/admin/js/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
-<script type="text/javascript" src="/admin/js/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
-<script type="text/javascript" src="/admin/js/plugins/jvectormap/vectormap-script.js"></script>
-
-
-<!--plugins.js - Some Specific JS codes for Plugin Settings-->
-<script type="text/javascript" src="/admin/js/plugins.js"></script>
-
 <!-- ================================================
 Page Scripts
 ================================================ -->
 @yield('scripts')
+
+<!--plugins.js - Some Specific JS codes for Plugin Settings-->
+<script type="text/javascript" src="/admin/js/plugins.js"></script>
+
 </body>
 
 

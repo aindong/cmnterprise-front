@@ -418,3 +418,18 @@
     </div>
     <!--end container-->
 @stop
+
+@section('scripts')
+    <!-- chartjs -->
+    <script type="text/javascript" src="/admin/js/plugins/chartjs/chart.min.js"></script>
+    <script type="text/javascript" src="/admin/js/plugins/chartjs/chart-script.js"></script>
+
+    <!-- sparkline -->
+    <script type="text/javascript" src="/admin/js/plugins/sparkline/jquery.sparkline.min.js"></script>
+    <script type="text/javascript" src="/admin/js/plugins/sparkline/sparkline-script.js"></script>
+
+    <!--jvectormap-->
+    <script type="text/javascript" src="/admin/js/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
+    <script type="text/javascript" src="/admin/js/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+    <script type="text/javascript" src="/admin/js/plugins/jvectormap/vectormap-script.js"></script>
+@stop

@@ -5,5 +5,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class UserEvent extends Model
 {
-
+    public function user()
+    {
+        return $this->belongsTo('App\Models\User');
+    }
 }
