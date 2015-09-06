@@ -27,3 +27,8 @@ $app->post('/payment/confirm', 'Payments\PaymentsController@postback');
 // Admin Dashboard
 $app->get('/admin/dashboard', 'Admin\DashboardController@index');
 
+// User Login
+$app->get('/login', 'Admin\DashboardController@login');
+$app->post('/login', 'Admin\DashboardController@doLogin');
+$app->get('/logout', 'Admin\DashboardController@logout');
+
